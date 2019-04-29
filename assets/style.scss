@@ -620,3 +620,9 @@ Custom-box
 		}
 	}
 }
+.text {
+	font-size: 1rem;
+	@media only screen and (min-width: 992px) {
+		font-size: 1.3rem;
+	}
+}
