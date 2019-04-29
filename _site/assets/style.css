@@ -350,7 +350,7 @@ Custom-box
 *****************/
 .custom-box {
   background: white;
-  padding: 1.5rem 2rem 3rem 2rem;
+  padding: 1.5rem 1.2rem 3rem 1.2rem;
   box-shadow: 0 2px 4px #00000033;
   height: 100%; }
   .custom-box .custom-box-title {
@@ -360,7 +360,7 @@ Custom-box
     margin-bottom: 1rem;
     font-weight: 500; }
   .custom-box .custom-box-body {
-    font-size: 15px;
+    font-size: 13px;
     color: #707070;
     text-align: center;
     padding-top: 1.3rem;
