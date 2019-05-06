@@ -316,13 +316,13 @@ header {
     font-size: 1.7rem; }
 
 .swiper-button-prev {
-  left: 2% !important; }
+  left: 8px !important; }
   @media only screen and (min-width: 992px) {
     .swiper-button-prev {
       left: 5% !important; } }
 
 .swiper-button-next {
-  right: 2% !important; }
+  right: 8px !important; }
   @media only screen and (min-width: 992px) {
     .swiper-button-next {
       right: 5% !important; } }
@@ -558,3 +558,44 @@ Custom-box
   @media only screen and (min-width: 992px) {
     .text {
       font-size: 1.3rem; } }
+
+.bridezilla-text-container {
+  position: absolute;
+  padding-top: 10px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  white-space: nowrap; }
+  @media only screen and (min-width: 992px) {
+    .bridezilla-text-container {
+      width: auto;
+      height: auto;
+      transform: none;
+      text-align: left;
+      top: 40%;
+      left: 60%; } }
+  .bridezilla-text-container .bridezilla-title {
+    font-size: 18px; }
+    @media only screen and (min-width: 768px) {
+      .bridezilla-text-container .bridezilla-title {
+        font-size: 32px; } }
+  .bridezilla-text-container .bridezilla-apps {
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 50px; }
+    @media only screen and (min-width: 992px) {
+      .bridezilla-text-container .bridezilla-apps {
+        bottom: auto;
+        left: auto;
+        transform: none; } }
+
+.bridezilla-img {
+  padding-top: 100px; }
+  @media only screen and (min-width: 992px) {
+    .bridezilla-img {
+      padding-top: 0; } }
