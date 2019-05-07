@@ -143,11 +143,11 @@ header {
 
 /**** FRONTPAGE *****/
 .frontpage-body {
-	position: absolute;
+	position: fixed;
 	z-index: 3;
 	top: 48px;
+	bottom: 0;
 	width: 100%;
-	height: calc(100% - 48px);
 }
 .custom-row {
 	display: flex;
@@ -256,9 +256,7 @@ header {
 	margin: auto;
 }
 .scrollable-pages {
-	height: calc(100vh - 48px);
 	z-index: 3;
-	overflow-y: scroll;
 	position: relative;
 	margin-top: 48px;
 }
@@ -289,17 +287,19 @@ header {
 	}
 	.swiper-slide {
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		@media only screen and (min-width: 992px) {
 			flex-direction: row;
 		}
 		.swiper-slide-img {
 			width: 80%;
-			height: 100%;
+			height: auto;
 			margin: 0 auto;
 			@media only screen and (min-width: 992px) {
 				margin: 0 2rem;
 				width: 25%;
+				height: 100%;
 			}
 		}
 		.swiper-body {
@@ -376,7 +376,7 @@ header {
 	}
 }
 .third-page-body {
-	background: url(img/background_2.png);
+	background: transparent;
 	padding-bottom: 3rem;
 }
 /*****************
@@ -664,8 +664,10 @@ Custom-box
 	}
 }
 .bridezilla-img {
-	padding-top: 100px;
-	@media only screen and (min-width: 992px) {
-		padding-top: 0;
+	img {
+		margin-top: 100px;
+		@media only screen and (min-width: 992px) {
+			margin-top: 0;
+		}
 	}
 }

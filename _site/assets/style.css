@@ -124,11 +124,11 @@ header {
 /**************/
 /**** FRONTPAGE *****/
 .frontpage-body {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: 48px;
-  width: 100%;
-  height: calc(100% - 48px); }
+  bottom: 0;
+  width: 100%; }
 
 .custom-row {
   display: flex;
@@ -234,9 +234,7 @@ header {
   margin: auto; }
 
 .scrollable-pages {
-  height: calc(100vh - 48px);
   z-index: 3;
-  overflow-y: scroll;
   position: relative;
   margin-top: 48px; }
 
@@ -266,18 +264,20 @@ header {
       margin: 4rem 22% 6rem 22% !important; } }
   .swiper-wrapper .swiper-slide {
     display: flex;
+    position: relative;
     flex-direction: column; }
     @media only screen and (min-width: 992px) {
       .swiper-wrapper .swiper-slide {
         flex-direction: row; } }
     .swiper-wrapper .swiper-slide .swiper-slide-img {
       width: 80%;
-      height: 100%;
+      height: auto;
       margin: 0 auto; }
       @media only screen and (min-width: 992px) {
         .swiper-wrapper .swiper-slide .swiper-slide-img {
           margin: 0 2rem;
-          width: 25%; } }
+          width: 25%;
+          height: 100%; } }
     .swiper-wrapper .swiper-slide .swiper-body {
       width: auto;
       margin: 3rem;
@@ -342,7 +342,7 @@ header {
     border-color: black; }
 
 .third-page-body {
-  background: url(img/background_2.png);
+  background: transparent;
   padding-bottom: 3rem; }
 
 /*****************
@@ -594,8 +594,8 @@ Custom-box
         left: auto;
         transform: none; } }
 
-.bridezilla-img {
-  padding-top: 100px; }
+.bridezilla-img img {
+  margin-top: 100px; }
   @media only screen and (min-width: 992px) {
-    .bridezilla-img {
-      padding-top: 0; } }
+    .bridezilla-img img {
+      margin-top: 0; } }
