@@ -60,6 +60,7 @@ header {
 	.nav-logo {
 		height: 36px;
 		margin-top: 6px;
+		margin-bottom: 6px;
 		@media only screen and (min-width: 992px) {
 			height: 32px;
 		}
@@ -148,8 +149,9 @@ header {
 	top: 48px;
 	bottom: 0;
 	width: 100%;
-	background-position: center;
-	background-size: cover;
+	//height: 100%;
+	background-position: bottom;
+	//background-size: cover;
 }
 .custom-row {
 	display: flex;
@@ -673,5 +675,91 @@ Custom-box
 			height: calc(100vh - 168px);
     	margin-top: 120px;
 		}
+	}
+}
+
+/****** APP PREVIEW *******/
+.btn-outline {
+	border: 1px solid black;
+}
+.invitation-card {
+	display: flex;
+  background: white;
+  box-shadow: 0 2px 4px #00000033;
+  margin-top: 0;
+  width: 100%;
+  flex-direction: column;
+  @media only screen and (min-width: 576px) {
+  	margin-top: 1rem;
+  }
+  @media only screen and (min-width: 768px) {
+  	flex-direction: row;
+  	margin-top: 10rem;
+  }
+  .invitation-card-img-container {
+  	img {
+		  height: auto;
+		  @media only screen and (min-width: 768px) {
+		  	height: 460px;
+		  }
+  	}
+  }
+  .invitation-card-message {
+  	margin: auto;
+  	text-align: center;
+	  padding: 3rem 0;
+	  @media only screen and (min-width: 768px) {
+	  	padding: 0;
+	  }
+  	.invitation-card-title {
+			font-size: 20px;
+		  @media only screen and (min-width: 768px) {
+				font-size: 36px;
+		  }
+  	}
+  	.invitation-card-sub-header {
+  		margin-bottom: 2rem;
+		  @media only screen and (min-width: 768px) {
+  			margin-bottom: 4rem;
+		  }
+  	}
+	  .invitation-card-buttons {
+	  	.btn {
+	  		display: block;
+	  		margin: auto;
+	  	}
+	  }
+  }
+}
+.bg-beige {
+	background: #FAF9F7;
+}
+.invitation-card-grid {
+	display: grid;
+	grid-gap: 1.6rem;
+	margin-top: 1.6rem;
+	.wedding-card, .location-card, .other-card {
+		width: 460px;
+		background: white;
+	  box-shadow: 0 2px 4px #00000033;
+	}
+	.wedding-card {
+		grid-column: 1;
+		.wedding-card-body {
+			padding: 2.5rem 3rem;
+			.wedding-card-title {
+				font-size: 20px;
+				font-weight: 500;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	.location-card-container {
+		grid-column: 2;
+		grid-row: 1/3;
+	}
+	.other-card {
+		grid-column: 1;
+		height: 300px;
 	}
 }
