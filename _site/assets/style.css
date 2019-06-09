@@ -548,11 +548,11 @@ Custom-box
     text-align: center;
     height: 40px;
     width: 28px; }
-  .contact a {
+  .contact .contact-link {
     font-size: 18px;
     padding-left: 50px;
     color: black; }
-    .contact a:hover {
+    .contact .contact-link:hover {
       text-decoration: underline; }
 
 .text {
@@ -642,9 +642,11 @@ Custom-box
       @media only screen and (min-width: 768px) {
         .invitation-card .invitation-card-message .invitation-card-sub-header {
           margin-bottom: 4rem; } }
-    .invitation-card .invitation-card-message .invitation-card-buttons .btn {
-      display: block;
-      margin: auto; }
+    .invitation-card .invitation-card-message .invitation-card-buttons {
+      display: inline-block; }
+      .invitation-card .invitation-card-message .invitation-card-buttons .btn {
+        display: block;
+        width: 100%; }
 
 .bg-beige {
   background: #FAF9F7; }
@@ -667,6 +669,7 @@ Custom-box
   .invitation-card-grid .wedding-card {
     grid-column: 1; }
     .invitation-card-grid .wedding-card .wedding-card-body {
+      text-align: center;
       padding: 2.5rem 3rem; }
       .invitation-card-grid .wedding-card .wedding-card-body .wedding-card-title {
         font-size: 20px;
@@ -833,3 +836,8 @@ Custom-box
 
 .bg-red {
   background: #C15B78 !important; }
+
+.social-icons a {
+  margin-right: 1.5rem; }
+.social-icons img {
+  height: 28px; }

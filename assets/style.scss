@@ -615,7 +615,7 @@ Custom-box
 		height: 40px;
 		width: 28px;
 	}
-	a {
+	.contact-link {
 		font-size: 18px;
 		padding-left: 50px;
 		color: black;
@@ -724,9 +724,10 @@ Custom-box
 		  }
   	}
 	  .invitation-card-buttons {
+	  	display: inline-block;
 	  	.btn {
 	  		display: block;
-	  		margin: auto;
+	  		width: 100%;
 	  	}
 	  }
   }
@@ -753,6 +754,7 @@ Custom-box
 	.wedding-card {
 		grid-column: 1;
 		.wedding-card-body {
+			text-align: center;
 			padding: 2.5rem 3rem;
 			.wedding-card-title {
 				font-size: 20px;
@@ -953,4 +955,12 @@ Custom-box
 }
 .bg-red {
 	background: #C15B78 !important;
+}
+.social-icons {
+	a {
+		margin-right: 1.5rem;
+	}
+	img {
+		height: 28px;
+	}
 }
