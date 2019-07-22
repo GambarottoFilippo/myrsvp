@@ -214,14 +214,13 @@ header {
 .mobile-logo-container {
   padding: 0;
   background: transparent;
-  border: none;
-  cursor: pointer; }
+  border: none; }
   .mobile-logo-container:hover, .mobile-logo-container:focus {
     background: transparent;
     border: none;
     outline: none; }
   .mobile-logo-container img {
-    height: 40px; }
+    height: 30px; }
     @media only screen and (min-width: 992px) {
       .mobile-logo-container img {
         height: 60px; } }
@@ -578,7 +577,7 @@ Custom-box
       transform: none;
       text-align: left;
       top: 30%;
-      left: 55%; } }
+      left: 50%; } }
   .bridezilla-text-container .bridezilla-title {
     font-size: 1.3rem; }
     @media only screen and (min-width: 768px) {
@@ -841,3 +840,20 @@ Custom-box
   margin-right: 1.5rem; }
 .social-icons img {
   height: 28px; }
+
+.ios-label {
+  position: absolute;
+  cursor: default;
+  white-space: normal;
+  top: 0;
+  right: -83px;
+  width: 80px;
+  text-align: left;
+  font-size: 11px; }
+  @media only screen and (min-width: 992px) {
+    .ios-label {
+      font-size: 12px;
+      right: -90px;
+      top: 12px;
+      width: 80px;
+      text-align: left; } }

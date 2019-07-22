@@ -237,14 +237,13 @@ header {
 	padding: 0;
 	background: transparent;
 	border: none;
-	cursor: pointer;
 	&:hover, &:focus {
 		background: transparent;
 		border: none;
 		outline: none;
 	}
 	img {
-		height: 40px;
+		height: 30px;
 		@media only screen and (min-width: 992px) {
 			height: 60px;
 		}
@@ -646,7 +645,7 @@ Custom-box
   	transform: none;
 		text-align: left;
 		top: 30%;
-		left: 55%;
+		left: 50%;
 	}
 	.bridezilla-title {
 		font-size: 1.3rem;
@@ -962,5 +961,22 @@ Custom-box
 	}
 	img {
 		height: 28px;
+	}
+}
+.ios-label {
+	position: absolute;
+	cursor: default;
+	white-space: normal;
+	top: 0;
+	right: -83px;
+	width: 80px;
+	text-align: left;
+	font-size: 11px;
+	@media only screen and (min-width: 992px) {
+		font-size: 12px;
+    right: -90px;
+    top: 12px;
+    width: 80px;
+    text-align: left;
 	}
 }
