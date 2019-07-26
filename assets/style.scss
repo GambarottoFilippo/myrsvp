@@ -175,17 +175,20 @@ header {
 .row-absolute {
 	padding: 0;
 	margin-top: 2vh;
+	z-index: -1;
 	@media only screen and (min-width: 992px) {
-		bottom: 0;
+		top: 0;
+		margin-top: 0;
+		left: calc(50vw - 960px);
 	  position: absolute;
-		left: 3%;
 	}
 }
 .first-slide-img {
 	width: 100%;
 	height: 100%;
 	@media only screen and (min-width: 992px) {
-		width: 45vw;
+		width: 1920px;
+		max-width: 1920px;
 	}
 }
 .first-slide-body {
@@ -266,6 +269,7 @@ header {
 .first-page-body {
 	height: auto;
 	position: relative;
+	overflow: hidden;
 	@media only screen and (min-width: 992px) {
 		height: calc(100vh - 48px);
 	}
@@ -669,9 +673,9 @@ Custom-box
 }
 .bridezilla-img {
 	img {
-		margin-top: 140px;
+		margin-top: 220px;
 		@media only screen and (min-width: 992px) {
-			height: calc(100vh - 168px);
+			height: auto;
     	margin-top: 120px;
 		}
 	}
