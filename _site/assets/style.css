@@ -16,6 +16,9 @@ body, html {
 a:hover {
   text-decoration: none; }
 
+a:visited {
+  color: inherit; }
+
 .title-margin {
   margin-top: 3rem; }
   @media only screen and (min-width: 992px) {
@@ -46,6 +49,12 @@ b, strong {
 
 h2 {
   font-weight: 300; }
+
+.gray-bg-container {
+  background-color: #F5F5F5; }
+
+.white-bg-container {
+  background-color: white; }
 
 /** HEADER **/
 .navigation-top {
@@ -246,6 +255,16 @@ header {
       .mobile-logo-container img {
         height: 60px; } }
 
+.features-download-app {
+  display: flex; }
+  .features-download-app img {
+    height: 32px; }
+    @media only screen and (min-width: 992px) {
+      .features-download-app img {
+        height: 40px; } }
+  .features-download-app .ios-label {
+    top: 6px; }
+
 .mr-2 {
   margin-right: 1rem; }
   @media only screen and (min-width: 992px) {
@@ -365,6 +384,53 @@ header {
 .third-page-body {
   background: transparent;
   padding-bottom: 3rem; }
+
+.link-to-features {
+  font-size: 18px; }
+  @media only screen and (min-width: 992px) {
+    .link-to-features {
+      font-size: 30px; } }
+
+/*****************
+FEATURES
+*****************/
+.features-header {
+  padding: 2rem 0; }
+  .features-header .features-header-description {
+    font-size: 18px;
+    text-align: center; }
+    @media only screen and (min-width: 992px) {
+      .features-header .features-header-description {
+        font-size: 28px;
+        text-align: left; } }
+  @media only screen and (min-width: 992px) {
+    .features-header {
+      padding: 4rem 0; } }
+
+.feature {
+  padding: 2rem;
+  text-align: center; }
+  @media only screen and (min-width: 992px) {
+    .feature {
+      text-align: left;
+      padding: 2rem 0; } }
+  @media only screen and (min-width: 786px) {
+    .feature.feature-reverse {
+      flex-direction: row-reverse; } }
+  .feature h4 {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0 2rem; }
+  .feature p {
+    font-size: 12px;
+    margin-bottom: 2rem; }
+  @media only screen and (min-width: 992px) {
+    .feature h4 {
+      padding: 0;
+      font-size: 30px; }
+    .feature p {
+      font-size: 20px;
+      margin-bottom: 1rem; } }
 
 /*****************
 Custom-box
@@ -508,7 +574,7 @@ Custom-box
     border-top: 80px solid #AEAEAE;
     border-bottom: 80px solid transparent;
     border-right: 80px solid transparent;
-    z-index: 10; }
+    z-index: 5; }
     @media only screen and (min-width: 1200px) {
       .fee-container.fee-container-disabled .corner {
         border-top: 120px solid #AEAEAE;
@@ -808,6 +874,8 @@ Custom-box
   .btn-green:hover, .btn-green:active {
     background-color: #287475 !important;
     border-color: #287475;
+    color: white; }
+  .btn-green:visited {
     color: white; }
 
 .btn-red {
