@@ -336,6 +336,7 @@ header {
 		display: flex;
 		position: relative;
 		flex-direction: column;
+		align-items: center;
 		@media only screen and (min-width: 992px) {
 			flex-direction: row;
 		}
@@ -554,7 +555,7 @@ Custom-box
 	:target {
 	  display: block;
 	  position: relative;
-	  top: -80px; 
+	  top: -80px;
 	  visibility: hidden;
 	}
 	.index-container {
