@@ -215,6 +215,7 @@ header {
       align-items: center;
       justify-content: flex-start;
       margin-top: 0;
+      width: 100%;
       min-width: 1920px; } }
 
 .first-slide-img {
